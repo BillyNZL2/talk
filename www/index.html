@@ -74,7 +74,7 @@
 			</div>
 
 			<div id="settings" v-if="showSettings">
-				<div class="label">Camera 📹</div>
+				<div class="label">Camera</div>
 				<div v-for="(videoDevice, i) in videoDevices" v-bind:key="videoDevice.deviceId">
 					<div
 						v-bind:class="'link '+(selectedVideoDeviceId === videoDevice.deviceId ? 'active' : '')"
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 
-				<div class="label">Microphone 🎙️</div>
+				<div class="label">Microphone</div>
 				<div v-for="(audioDevice, i) in audioDevices" v-bind:key="audioDevice.deviceId">
 					<div
 						v-bind:class="'link '+(selectedAudioDeviceId === audioDevice.deviceId ? 'active' : '')"
@@ -94,7 +94,7 @@
 					</div>
 				</div>
 
-				<div class="label">Name 📛</div>
+				<div class="label">Name</div>
 				<input type="text" placeholder="Your name" v-model="name" v-on:keyup="nameToLocalStorage" />
 
 				<div class="copy link" v-on:click="copyURL">{{copyText || "Copy room link"}}</div>
