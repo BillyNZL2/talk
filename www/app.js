@@ -26,6 +26,9 @@ const App = new Vue({
 				() => {
 					this.copyText = "Copied 👍";
 					setTimeout(() => (this.copyText = ""), 3000);
+					
+					this.showIntro = false;
+					
 				},
 				(err) => console.error(err)
 			);
