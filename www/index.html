@@ -42,9 +42,10 @@
 				<p>
 					<small>
 						<div class="title">Share this link to start talking </div> 												
-						Email this link: <a :href="'mailto:?subject=Join my call on MyGroupSpace&body=<h3>Join my call on MygroupSpace at ' + roomLink + '</h3>'" class="roomLink">{{roomLink}} </a>
+						Email this link: <a :href="'mailto:?subject=Join my call on MyGroupSpace&body=Join my call on MygroupSpace at ' + roomLink + ''" class="roomLink">{{roomLink}} </a>
 						<div>
-							<button class="copyURL" href="javascript:void(0)" v-on:click="copyURL">{{copyText || "Copy"}}</button>
+							<button class="copyURL" href="javascript:void(0)" v-on:click="copyURL">{{copyText || "Copy"}}</button> 
+							<button style="margin-left:1em" class="copyURL" href="javascript:void(0)" v-on:click="close">Close</button>
 						<div>						
 					</small>
 				</p>
