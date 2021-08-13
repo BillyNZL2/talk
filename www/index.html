@@ -111,6 +111,7 @@
 				<div id="actions">
 					<button v-bind:class="'icon-mic'+(audioEnabled ? '' : '-off')" v-on:click="audioToggle"></button>
 					<button v-bind:class="'icon-video'+(videoEnabled ? '' : '-off')" v-on:click="videoToggle"></button>
+					<button style="color:red;font-family:arial" v-bind:class="'icon-phone-off'" v-on:click="close"></button>
 					<button
 						v-bind:class="'icon-message-square '+(showChat ? 'active' : '')"
 						v-on:click="showChat = !showChat"
