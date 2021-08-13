@@ -44,8 +44,8 @@
 						<div class="title">Share this link to start talking </div> 												
 						Email this link: <a :href="'mailto:?subject=Join my call on MyGroupSpace&body=Join my call on MygroupSpace at ' + roomLink + ''" class="roomLink">{{roomLink}} </a>
 						<div>
-							<button class="copyURL" href="javascript:void(0)" v-on:click="copyURL">{{copyText || "Copy"}}</button> 
-							<button style="margin-left:1em" class="copyURL" href="javascript:void(0)" v-on:click="close">Close</button>
+							<a class="copyURL" href="javascript:void(0)" v-on:click="copyURL">{{copyText || "Copy"}}</button> 
+							<a style="margin-left:1em" class="copyURL" href="javascript:void(0)" v-on:click="showIntro=false">Close</a>
 						<div>						
 					</small>
 				</p>
