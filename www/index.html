@@ -41,9 +41,11 @@
 			 <div id="intro" v-if="showIntro && !showChat && !showSettings">
 				<p>
 					<small>
-						<div class="title">Share this link to start talking </div> 
-						<span class="roomLink">{{roomLink}} </span>
-						<button class="copyURL" href="javascript:void(0)" v-on:click="copyURL">{{copyText || "Copy"}}</button>
+						<div class="title">Share this link to start talking </div> 												
+						Email this link: <a :href="'mailto:?subject=Join my call on MyGroupSpace&body=<h3>Join my call on MygroupSpace at ' + roomLink + '</h3>'" class="roomLink">{{roomLink}} </a>
+						<div>
+							<button class="copyURL" href="javascript:void(0)" v-on:click="copyURL">{{copyText || "Copy"}}</button>
+						<div>						
 					</small>
 				</p>
 				<div class="footer">
